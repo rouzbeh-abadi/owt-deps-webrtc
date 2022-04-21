@@ -459,6 +459,10 @@ NSUInteger GetMaxSampleRate(const webrtc::H264::ProfileLevelId &profile_level_id
   }
 
   CMTime presentationTimeStamp = CMTimeMake(frame.timeStampNs / rtc::kNumNanosecsPerMillisec, 1000);
+
+  NSLog(@"%@", presentationTimeStamp);
+  NSLog(@"%i", presentationTimeStamp);
+
   CFDictionaryRef frameProperties = nullptr;
   if (isKeyframeRequired) {
     CFTypeRef keys[] = {kVTEncodeFrameOptionKey_ForceKeyFrame};

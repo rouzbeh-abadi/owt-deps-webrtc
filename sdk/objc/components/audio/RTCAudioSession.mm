@@ -527,7 +527,7 @@ NSString * const kRTCAudioSessionOutputVolumeSelector = @"outputVolume";
       notification.userInfo[AVAudioSessionRouteChangeReasonKey];
   AVAudioSessionRouteChangeReason reason =
       (AVAudioSessionRouteChangeReason)reasonNumber.unsignedIntegerValue;
-  RTCLog(@"Audio route changed:");
+  RTCLog(@"Audio route changed: - Test text!");
   switch (reason) {
     case AVAudioSessionRouteChangeReasonUnknown:
       RTCLog(@"Audio route changed: ReasonUnknown");
