@@ -536,14 +536,14 @@ NSString * const kRTCAudioSessionOutputVolumeSelector = @"outputVolume";
       RTCLog(@"Audio route changed: NewDeviceAvailable");
       break;
     case AVAudioSessionRouteChangeReasonOldDeviceUnavailable:
-      RTCLog(@"Audio route changed: OldDeviceUnavailable");
+      RTCLog(@"Audio-test route changed: OldDeviceUnavailable");
       break;
     case AVAudioSessionRouteChangeReasonCategoryChange:
-      RTCLog(@"Audio route changed: CategoryChange to :%@",
+      RTCLog(@"Audio-test route changed: CategoryChange to :%@",
              self.session.category);
       break;
     case AVAudioSessionRouteChangeReasonOverride:
-      RTCLog(@"Audio route changed: Override");
+      RTCLog(@"Audio-test route changed: Override");
       break;
     case AVAudioSessionRouteChangeReasonWakeFromSleep:
       RTCLog(@"Audio route changed: WakeFromSleep");
